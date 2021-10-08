@@ -16,11 +16,11 @@ body::-webkit-scrollbar {
 
 nav {
     background-color: var(--primary);
-    padding: 0.05em 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 3;
+    width: 100%;
 }
 
 @keyframes opening-carousel {
@@ -79,6 +79,10 @@ nav {
     opacity: 0.25;
 }
 
+.web-title {
+    margin-left: 1em;
+}
+
 .title-1 {
     color: whitesmoke;
     text-transform: uppercase;
@@ -92,6 +96,7 @@ nav {
 .cart {
     transition: all linear 0.5s;
     color: var(--secondary);
+    margin-right: 1em;
 }
 
 .cart:hover {
@@ -144,7 +149,7 @@ nav {
 
 .total-items {
     position: absolute;
-    right: 5px;
+    right: 20px;
     top: 10px;
     background-color: white;
     padding: 0.5em 0.75em;
@@ -279,6 +284,12 @@ nav {
     font-size: 14px;
 }
 
+@media only screen and (max-width: 350px) {
+    .total-items {
+        top: 20px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .container {
         max-width: 100%;
@@ -290,6 +301,15 @@ nav {
 
     .card {
         margin: 1em auto;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 8em;
     }
 }
 
@@ -308,6 +328,15 @@ nav {
     .card {
         margin: 1em;
     }
+
+    nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 8em;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -323,6 +352,15 @@ nav {
     
     .card {
         margin: 1em 4em;
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 8em;
     }
 }
 
@@ -340,6 +378,15 @@ nav {
     .card {
         margin: 1em 2.75em;
     }
+
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 5em;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -356,6 +403,15 @@ nav {
     .card {
         margin: 1em 1.5em;
     }
+
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 5em;
+    }
 }
 
 @media only screen and (min-width: 1400px) {
@@ -371,6 +427,15 @@ nav {
 
     .card {
         margin: 1em;
+    }
+
+    nav {
+        position: relative;
+        width: 100%;
+    }
+
+    .carousel {
+        margin-top: 5em;
     }
 }
 
