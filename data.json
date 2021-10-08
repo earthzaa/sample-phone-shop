@@ -12,11 +12,11 @@
     ],
     "product": [
         {
-            "name": "iPhone 11",
+            "name": "iPhone 13 Pro Max",
             "brand": "apple",
-            "description": "iPhone 11",
-            "price": "1280",
-            "discount": "90",
+            "description": "iPhone 13 Pro Max",
+            "price": "1190",
+            "discount": "99",
             "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_13_pro__etecge8yu8q6_large_2x.jpg"
         },
         {
