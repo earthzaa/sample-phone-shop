@@ -1,0 +1,30 @@
+{
+    "banners": [
+        {
+            "img": "https://www.apple.com/v/home/af/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_large_2x.jpg"
+        },
+        {
+            "img": "https://www.apple.com/v/home/af/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg"
+        }
+    ],
+    "product": [
+        {
+            "name": "iphone 11",
+            "brand": "apple",
+            "description": "iphone 11",
+            "price": "280"
+        },
+        {
+            "name": "iphone 11",
+            "brand": "apple",
+            "description": "iphone 11",
+            "price": "280"
+        },
+        {
+            "name": "iphone 11",
+            "brand": "apple",
+            " description": "iphone 11",
+            "price": "280"
+        }
+    ]
+}
