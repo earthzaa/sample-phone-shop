@@ -1,7 +1,7 @@
 :root {
-    --primary: #bdd0eb;
-    --secondary: #567096;
-    --success: #b3e2a3;
+    --primary: #B1CCEF;
+    --secondary: #183356;
+    --success: #58C040;
 }
 
 body {
@@ -219,7 +219,7 @@ nav {
 .card-btn:hover {
     cursor: pointer;
     transition: all linear 0.5s;
-    color: var(--primary);
+    color: white;
     background-color: var(--secondary);
 }
 
@@ -258,10 +258,10 @@ nav {
     justify-content: center;
     align-items: center;
     padding: 1em;
-    color: var(--secondary);
-    border-radius: 0.75em;
+    color: white;
+    border-radius: 0.5em;
     position: fixed;
-    bottom: 50px;
+    bottom: 25px;
     left: 50%;
     transform: translateX(-50%);
     -o-transform: translateX(-50%);
@@ -269,7 +269,7 @@ nav {
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     width: 200px;
-    height: 75px;
+    height: 50px;
     background-color: var(--success);
     font-size: 14px;
 }
