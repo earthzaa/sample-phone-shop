@@ -12,52 +12,58 @@
     ],
     "product": [
         {
-            "name": "iPhone 13 Pro Max",
+            "id": "1",
+            "name": "iPhone 13 Pro (Blue)",
             "brand": "apple",
-            "description": "iPhone 13 Pro Max",
+            "description": "iPhone 13 Pro (Blue)",
             "price": "1190",
             "discount": "99",
             "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_13_pro__etecge8yu8q6_large_2x.jpg"
         },
         {
-            "name": "iPhone 11",
+            "id": "2",
+            "name": "iPhone 12 (Pink)",
             "brand": "apple",
-            "description": "iPhone 11",
+            "description": "iPhone 12 (Pink)",
             "price": "399",
             "discount": "0",
             "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_13__ejsyn7suyw02_large_2x.jpg"
         },
         {
-            "name": "iPhone 11",
+            "id": "3",
+            "name": "iPhone 11 (Purple)",
             "brand": "apple",
-            " description": "iPhone 11",
+            " description": "iPhone 11 (Purple)",
+            "price": "399",
+            "discount": "39",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
+        },
+        {
+            "id": "4",
+            "name": "iPhone SE (Black)",
+            "brand": "apple",
+            " description": "iPhone SE (Black)",
             "price": "299",
-            "discount": "10",
+            "discount": "0",
+            "img": "https://www.apple.com/v/iphone/home/bb/images/overview/compare/compare_iphone_se__bw7vzp0qauuq_large_2x.jpg"
+        },
+        {
+            "id": "5",
+            "name": "iPhone 11 (Purple - Used)",
+            "brand": "apple",
+            " description": "iPhone 11 (Purple - Used)",
+            "price": "399",
+            "discount": "100",
             "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
         },
         {
-            "name": "iPhone 11",
+            "id": "6",
+            "name": "iPhone SE (Black - Used)",
             "brand": "apple",
-            " description": "iPhone 11",
-            "price": "399",
-            "discount": "0",
-            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
-        },
-        {
-            "name": "iPhone 11",
-            "brand": "apple",
-            " description": "iPhone 11",
-            "price": "399",
-            "discount": "0",
-            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
-        },
-        {
-            "name": "iPhone 11",
-            "brand": "apple",
-            " description": "iPhone 11",
-            "price": "399",
-            "discount": "0",
-            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
+            " description": "iPhone SE (Black - Used)",
+            "price": "299",
+            "discount": "59",
+            "img": "https://www.apple.com/v/iphone/home/bb/images/overview/compare/compare_iphone_se__bw7vzp0qauuq_large_2x.jpg"
         }
     ]
 }

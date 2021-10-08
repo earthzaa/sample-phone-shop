@@ -1,7 +1,7 @@
 :root {
     --primary: #B1CCEF;
     --secondary: #183356;
-    --success: #58C040;
+    --success: #69C653;
 }
 
 body {
@@ -187,6 +187,8 @@ nav {
     width: 200px;
     height: 300px;
     object-fit: contain;
+    padding-bottom: 0.75em;
+    border-bottom: 4px solid whitesmoke;
 }
 
 .card-name {
@@ -214,6 +216,12 @@ nav {
     border: none;
     transition: all linear 0.5s;
     color: var(--secondary);
+}
+
+.card-btn:disabled {
+    background-color: gray !important;
+    color: white !important;
+    transition: all linear 0.5s;
 }
 
 .card-btn:hover {

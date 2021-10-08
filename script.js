@@ -18,6 +18,7 @@ let carouselIndex = 0;
 let products = [];
 let cart = [];
 let isOpenCart = false;
+let isShowNoti = false;
 
 const formatPrice = (price = '') => new Intl.NumberFormat('en-En').format(price);
 
@@ -27,21 +28,9 @@ const updateTotalInCart = () => {
     totalInCart.innerHTML = length > 9 ? `${9}+` : length;
 };
 
-const addProductToCart = (index = 0) => {
-    const product = products[index];
-    cart.push(product);
+const updateProducts = () => {
+    productList.innerHTML = '';
 
-    updateTotalInCart();
-    notiContainer.innerHTML = '';
-    notiContainer.setAttribute('style', 'display: none');
-    notiContainer.setAttribute('style', 'display: block')
-    notiInfo.innerHTML = `add ${product?.name || ''} - $${(product?.price - product?.discount) || 0} to Cart !`
-
-    notiContainer.appendChild(notiInfo);
-    setTimeout(() => notiContainer.setAttribute('style', 'display: none'), 1500);
-};
-
-const setProducts = () => {
     products.forEach((product, index) => {
         let div = document.createElement('div');
         div.setAttribute('class', 'card');
@@ -50,7 +39,7 @@ const setProducts = () => {
         img.setAttribute('class', 'card-img');
         img.setAttribute('src', product?.img || '');
 
-        let name = document.createElement('h4');
+        let name = document.createElement('h5');
         name.setAttribute('class', 'card-name');
         name.innerHTML = product?.name || '';
 
@@ -72,6 +61,7 @@ const setProducts = () => {
         let btn = document.createElement('button');
         btn.setAttribute('class', 'card-btn');
         btn.setAttribute('name', 'btn');
+        if (isShowNoti) btn.setAttribute('disabled');
         btn.innerHTML = `Order`;
         btn.addEventListener('click', () => addProductToCart(index));
 
@@ -86,11 +76,28 @@ const setProducts = () => {
     });
 };
 
+const addProductToCart = (index = 0) => {
+    const product = products[index];
+    cart.push(product);
+
+    isShowNoti = true;
+    notiContainer.innerHTML = '';
+    notiContainer.setAttribute('style', 'display: block')
+    notiInfo.innerHTML = `add ${product?.name || ''} - $${(product?.price - product?.discount) || 0} to cart !`
+    notiContainer.appendChild(notiInfo);
+    updateTotalInCart();
+
+    setTimeout(() => {
+        isShowNoti = false;
+        notiContainer.setAttribute('style', 'display: none');
+    }, 1500);
+};
+
 const getJsonData = (data) => {
     products = data.product;
     banners = data.banners;
 
-    setProducts();
+    updateProducts();
 };
 
 const parseJson = (response) => {
@@ -129,7 +136,7 @@ const updateCartList = () => {
 
         let noData = document.createElement('h4');
         noData.setAttribute('class', 'no-data-center');
-        noData.innerHTML = 'No products in cart...'
+        noData.innerHTML = 'No product in cart...'
 
         cartList.appendChild(noData);
 
@@ -148,9 +155,10 @@ const updateCartList = () => {
         detail.setAttribute('class', 'cart-detail');
 
         let name = document.createElement('span');
-        name.innerHTML = `${index + 1}). ${product?.name || ''}`;
+        name.innerHTML = `${index + 1}. ${product?.name || ''}`;
 
-        let price = document.createElement('span');
+        let price = document.createElement('div');
+        price.setAttribute('style', 'margin-top: 0.5em');
         price.innerHTML = `$${(product?.price - product?.discount) || 0}`;
 
         let iconDel = document.createElement('i');
