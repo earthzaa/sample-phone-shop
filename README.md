@@ -1,2 +1,2 @@
-# simple-phone-shop
+# sample-phone-shop
 It is simple website for phone shop
