@@ -4,27 +4,57 @@
             "img": "https://www.apple.com/v/home/af/images/heroes/iphone-13/hero_iphone_13__f194u1rdooeq_large_2x.jpg"
         },
         {
-            "img": "https://www.apple.com/v/home/af/images/heroes/iphone-13-pro/hero_iphone_13pro__dhnsegysa42u_large_2x.jpg"
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/hero/iphone_13__fc54ap6asium_large_2x.jpg"
         }
     ],
     "product": [
         {
-            "name": "iphone 11",
+            "name": "iPhone 11",
             "brand": "apple",
-            "description": "iphone 11",
-            "price": "280"
+            "description": "iPhone 11",
+            "price": "1280",
+            "discount": "90",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_13_pro__etecge8yu8q6_large_2x.jpg"
         },
         {
-            "name": "iphone 11",
+            "name": "iPhone 11",
             "brand": "apple",
-            "description": "iphone 11",
-            "price": "280"
+            "description": "iPhone 11",
+            "price": "399",
+            "discount": "0",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_13__ejsyn7suyw02_large_2x.jpg"
         },
         {
-            "name": "iphone 11",
+            "name": "iPhone 11",
             "brand": "apple",
-            " description": "iphone 11",
-            "price": "280"
+            " description": "iPhone 11",
+            "price": "299",
+            "discount": "10",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
+        },
+        {
+            "name": "iPhone 11",
+            "brand": "apple",
+            " description": "iPhone 11",
+            "price": "399",
+            "discount": "0",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
+        },
+        {
+            "name": "iPhone 11",
+            "brand": "apple",
+            " description": "iPhone 11",
+            "price": "399",
+            "discount": "0",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
+        },
+        {
+            "name": "iPhone 11",
+            "brand": "apple",
+            " description": "iPhone 11",
+            "price": "399",
+            "discount": "0",
+            "img": "https://www.apple.com/v/iphone/home/ba/images/overview/compare/compare_iphone_12__edurff15kyoi_large_2x.jpg"
         }
     ]
 }
